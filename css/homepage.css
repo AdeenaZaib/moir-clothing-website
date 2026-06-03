@@ -59,17 +59,14 @@
 
 .hero-deco {
     flex: 1;
-    background: #f0ede8;
-    overflow: hidden;
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-deco img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top center;
-    display: block;
+    max-width: 100%;
+    padding: 40px;
 }
 
 @media screen and (max-width: 768px) {
