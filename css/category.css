@@ -138,7 +138,7 @@
     min-width: 0;
 }
 
-.item-box.slider-hidden {
+.main-container .container .item-section .item-box.slider-hidden {
     display: none;
 }
 
