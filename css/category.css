@@ -11,9 +11,7 @@
     flex-direction: column;
 }
 
-.main-container .container .banner {
-    margin: 28px 0 0 0;
-    border-radius: 8px;
+.banner {
     overflow: hidden;
     background: #111;
     min-height: 220px;
@@ -22,7 +20,7 @@
     position: relative;
 }
 
-.main-container .container .banner::before {
+.banner::before {
     content: 'FALL';
     position: absolute;
     right: -10px;
