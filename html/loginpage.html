@@ -4,36 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
-    <!-- to link all css files  -->
+    <title>login — moir</title>
     <link rel="Stylesheet" href="./../css/header.css">
     <link rel="Stylesheet" href="./../css/loginpage.css">
     <link rel="Stylesheet" href="./../css/footerr.css">
 </head>
 <body>
     <div class="header">
-        <div class="logo"> <!-- for logo on the header -->
-            <a href="homepage.html"><img src="./../img/logo.png" alt="image here" ></a>
+        <div class="logo">
+            <a href="homepage.html"><img src="./../img/logo.png" alt="moir"></a>
         </div>
         <nav>
             <ul>
                 <li><a href="homepage.html">HOME</a></li>
-                <li> <a href="category.html">CATEGORIES</a></li>
-                <li> <a href="loginpage.html">LOGIN</a</li>
-                <li> <a href="cart.html">CART</a></li>
-               
+                <li><a href="category.html">CATEGORIES</a></li>
+                <li><a href="loginpage.html">LOGIN</a></li>
+                <li><a href="cart.html">CART</a></li>
             </ul>
         </nav>
     </div>
-    <div class="container">
-        <form action="homepage.html">
-            <h1>login to moir</h1>
-            <input type="username" placeholder="User-Name">
-            <input type="password" placeholder="Password">
-            <a class="Login-btn" href="homepage.html">LOG IN</a>
-            <p>not registered yet ? sign up <a href="registerationpage.html">here</a></p> <!-- to direct to sign up page -->
-        </form>
+
+    <div class="auth-layout">
+        <div class="auth-left">
+            <div class="auth-left-content">
+                <span class="auth-brand">moir</span>
+                <h2>Dress for<br>the moment.</h2>
+                <p>Timeless fashion, delivered to your door. Join thousands of shoppers who trust moir.</p>
+            </div>
+        </div>
+        <div class="auth-right">
+            <form action="homepage.html">
+                <h1>Welcome back</h1>
+                <p class="auth-sub">Sign in to your account</p>
+                <div class="input-group">
+                    <label>Username</label>
+                    <input type="text" placeholder="Enter your username">
+                </div>
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter your password">
+                </div>
+                <a class="Login-btn" href="homepage.html">LOG IN</a>
+                <p class="auth-link">Not registered yet? <a href="registerationpage.html">Create an account</a></p>
+            </form>
+        </div>
     </div>
+
     <div class="footer">
         <div class="container">
             <div class="row">
@@ -45,8 +61,8 @@
                         <img src="./../img/app-store.png">
                     </div>
                 </div>
-                <div class="footercol2"> <!-- for logo on the footer -->
-                    <img src="./../img/logo2.png" alt="image here" >
+                <div class="footercol2">
+                    <img src="./../img/logo2.png" alt="moir">
                     <p>We aim to provide timeless fashion pieces and make clothing more accessible.</p>
                 </div>
                 <div class="footercol3">

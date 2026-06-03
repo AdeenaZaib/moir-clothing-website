@@ -7,14 +7,22 @@
     margin-top: 80px;
 }
 
+.footer .container {
+    display: block !important;
+    min-height: unset !important;
+    height: auto !important;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
 .row {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 32px;
-    max-width: 1200px;
-    margin: 0 auto 40px;
+    margin-bottom: 40px;
 }
 
 .footercol1,
