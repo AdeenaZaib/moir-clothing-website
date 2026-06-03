@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    margin: auto;
+    padding: 0; /* Reset padding to zero for all elements */
+}
+.logo img {
+    width: 150px; /* Set the width of the logo image */
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    flex: 1; /* Allow the navigation to grow and take up remaining space */
+    text-align: right;
+
+}
+/* Styles for unordered lists inside the navigation */
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display:inline-block;
+    margin-right: 20px;
+}
+
+a{
+    text-decoration: none; /* Remove underline from anchor links */
+    color: #000000
+}
+ .header a:hover {
+    font-weight: bold;  /* Increase font weight on hover */
+ } 

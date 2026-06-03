@@ -1,0 +1,43 @@
+
+.container{
+    max-width:1400px;
+    display: flex; /* Use flexbox to organize the content */
+    align-items: center; 
+    justify-content: center; /* Center items horizontally within the container */
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+.container form{
+     background-color: white;
+     border-radius: 12px; /* rounds the edges of the container */
+     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25); /* Add a subtle box shadow for depth */
+     width: 400px;
+     padding: 20px;
+}
+.container form input{
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black; /* adds a line under neath */
+    margin: 20px 0;
+    padding: 10px;
+}
+/* button styling */
+.container form .Login-btn {
+    padding: 10px 20px;
+    margin: 20px 0px;
+    border: none;
+    font-size: 14px;
+    background-color: #000000;
+    color: white;
+}
+
+.container form a:hover{
+    color:#000000;
+    background: #ffff;
+    font-weight: bold;
+}
+
+.container form p {
+    margin: 20px 0px;
+}

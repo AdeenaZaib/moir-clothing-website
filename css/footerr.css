@@ -1,0 +1,51 @@
+
+.footer{ /* general styling */
+    font-family: 'Poppins', sans-serif;
+    background: #000000 ;
+    color: #ffff ;
+    font-size: 14px ;
+    padding: 50px 0px 20px 0px;
+}
+/* Styles for the row inside the footer */
+.row{
+    display: flex; /* organizes all columns in the row */
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: 'Poppins', sans-serif;
+}
+.footercol1 , .footercol2 , .footercol3 , .footercol4{
+    min-width: 250px; /* Set the minimum width for the footer columns */
+    margin-bottom: 20px;
+}
+
+.footercol1{
+    flex-basis: 30%; /* Set the initial size of the first column to 30% */
+   padding-left: 10px ;
+}
+
+.footercol2{
+    flex: 1; /* Allow the second column to grow and take up remaining space */
+    text-align: center;
+}
+
+.footercol2 img{
+    width: 180px;
+    margin-bottom: 20px ;
+}
+
+.footercol3 , .footercol4{
+    flex-basis: 12%; /* Set the initial size of the third and fourth columns to 12% */
+    text-align: center;
+}
+
+ul{
+    list-style-type: none; /* Remove default list styling */
+}
+.applogo{
+    margin-top: 20px;
+}
+
+.applogo img{
+    width: 140px;
+}

@@ -1,0 +1,115 @@
+.cart-container{
+    margin: 100px ;
+    font-family: 'Poppins', sans-serif;
+    height: 50vh;
+}
+/* Styles for the cart table */
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.info{
+    display:flex ;
+    flex-wrap: wrap;
+}
+/* Styles for heading within table cells */
+th{
+    text-align: left;
+    padding: 5px;
+    color: #fff ;
+    background: #000;
+    font-weight: normal;
+}
+
+tr .heading{
+    margin: 20px;
+}
+/* Styles for table cells */
+td{
+    padding: 10px 5px;
+}
+
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+
+}
+
+td a{
+    color:#4d0101 ;
+    font-size: 12px;
+    text-decoration: underline; /* Add underline to links within table cells */
+}
+/* Styles for images within table cells */
+td img{
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+/* Styles for the total price section */
+.total-price{
+    display:flex;
+    justify-content: flex-end;
+
+}
+
+.total-price table{
+    border-top: 3px solid #000 ;
+    width: 100%;
+    max-width: 400px;
+
+
+}
+/* Styles for the last child of table cells */
+td:last-child{
+    text-align: right;
+}
+
+th:last-child{
+    text-align: right;
+}
+
+.container form .signup-btn {
+    padding: 10px 20px;
+    margin: 20px 0px;
+    border: none;
+    font-size: 14px;
+    background-color: #000000;
+    color: white;
+}
+
+.container form a:hover{
+    color:#000000;
+    background: #ffff;
+    font-weight: bold;
+}
+.cart-container .checkout-btn {
+    padding: 10px 20px;
+    margin: 10px 0px;
+    border: none;
+    font-size: 14px;
+    background-color: #000000;
+    color: white;
+}
+
+.cart-container .shopping-btn {
+    padding: 10px 20px;
+    margin: 10px 0px;
+    border: none;
+    font-size: 14px;
+    background-color: #000000;
+    color: white;
+}
+
+.cart-container a:hover{
+    color:#000000;
+    background: #ffff;
+    font-weight: bold;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,70 @@
+
+.add-section{
+    display: flex;
+    align-items: center; /* Center items vertically within the container */
+    flex-wrap: wrap; /* Allow items to wrap onto the next line if the container is too small */
+    justify-content: space-around; /* Distribute items with equal space around them */
+    font-family: 'Poppins', sans-serif;
+    
+}
+.col{
+    flex-basis: 50%; /* Set the initial size of the column to 50% */
+    min-width: 300px;
+}
+.col img{
+    max-width: 100%;
+    padding: 50px 50px;
+}
+.col h1{
+    font-size: 40px ;
+    line-height: 50px; /* for better spacing */
+    margin: 25px 0;
+}
+/* button styling */
+.shop{
+    display: inline-block;
+    background: #000000;
+    color: #ffff;
+    padding: 8px 30px;
+    margin: 20px 0;
+}
+
+.col a:hover{
+
+    color:#000000;
+    background: #ffff;
+    font-weight: bold; /* Increase font weight on hover */
+}
+
+.main {
+    max-width: 1400px;
+    margin-bottom: 20px; /* Add margin to the bottom of the container */
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 70vh ;
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
