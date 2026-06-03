@@ -1,115 +1,140 @@
-.cart-container{
-    margin: 100px ;
+.cart-container {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 40px;
     font-family: 'Poppins', sans-serif;
-    height: 50vh;
+    min-height: 50vh;
 }
-/* Styles for the cart table */
-table{
+
+.cart-container h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 28px;
+    letter-spacing: -0.2px;
+}
+
+table {
     width: 100%;
     border-collapse: collapse;
 }
-.info{
-    display:flex ;
-    flex-wrap: wrap;
-}
-/* Styles for heading within table cells */
-th{
+
+th {
     text-align: left;
-    padding: 5px;
-    color: #fff ;
-    background: #000;
-    font-weight: normal;
-}
-
-tr .heading{
-    margin: 20px;
-}
-/* Styles for table cells */
-td{
-    padding: 10px 5px;
-}
-
-td input{
-    width: 40px;
-    height: 30px;
-    padding: 5px;
-
-}
-
-td a{
-    color:#4d0101 ;
+    padding: 10px 12px;
+    color: #fff;
+    background: #111;
+    font-weight: 500;
     font-size: 12px;
-    text-decoration: underline; /* Add underline to links within table cells */
+    letter-spacing: 0.8px;
 }
-/* Styles for images within table cells */
-td img{
-    width: 100px;
-    height: 100px;
-    margin-right: 10px;
+
+th:last-child {
+    text-align: right;
 }
-/* Styles for the total price section */
-.total-price{
-    display:flex;
+
+td {
+    padding: 14px 12px;
+    border-bottom: 1px solid #f0f0f0;
+    vertical-align: middle;
+    font-size: 13px;
+    color: #333;
+}
+
+td:last-child {
+    text-align: right;
+}
+
+td img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 12px;
+    vertical-align: middle;
+}
+
+td input {
+    width: 48px;
+    height: 32px;
+    padding: 4px 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+}
+
+td a {
+    color: #888;
+    font-size: 11px;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+td a:hover {
+    color: #111;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.total-price {
+    display: flex;
     justify-content: flex-end;
-
+    margin-top: 24px;
 }
 
-.total-price table{
-    border-top: 3px solid #000 ;
+.total-price table {
+    border-top: 2px solid #111;
     width: 100%;
-    max-width: 400px;
-
-
-}
-/* Styles for the last child of table cells */
-td:last-child{
-    text-align: right;
+    max-width: 340px;
 }
 
-th:last-child{
-    text-align: right;
-}
-
-.container form .signup-btn {
-    padding: 10px 20px;
-    margin: 20px 0px;
-    border: none;
+.total-price td {
     font-size: 14px;
-    background-color: #000000;
-    color: white;
+    font-weight: 500;
+    color: #111;
+    border-bottom: none;
 }
 
-.container form a:hover{
-    color:#000000;
-    background: #ffff;
-    font-weight: bold;
-}
-.cart-container .checkout-btn {
-    padding: 10px 20px;
-    margin: 10px 0px;
-    border: none;
-    font-size: 14px;
-    background-color: #000000;
-    color: white;
-}
-
-.cart-container .shopping-btn {
-    padding: 10px 20px;
-    margin: 10px 0px;
-    border: none;
-    font-size: 14px;
-    background-color: #000000;
-    color: white;
-}
-
-.cart-container a:hover{
-    color:#000000;
-    background: #ffff;
-    font-weight: bold;
-}
-
-.buttons{
+.buttons {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+.cart-container .checkout-btn,
+.cart-container .shopping-btn {
+    display: inline-block;
+    padding: 12px 32px;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    background: #111;
+    color: #fff;
+    border: 1.5px solid #111;
+    border-radius: 2px;
+    transition: background 0.2s, color 0.2s;
+    cursor: pointer;
+    text-align: center;
+}
+
+.cart-container .checkout-btn:hover,
+.cart-container .shopping-btn:hover {
+    background: #fff;
+    color: #111;
+}
+
+@media screen and (max-width: 600px) {
+    .cart-container {
+        padding: 0 16px;
+        margin: 32px auto;
+    }
 }

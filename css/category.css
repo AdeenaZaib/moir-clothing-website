@@ -1,94 +1,133 @@
-/* Set maximum width, center content, and arrange in a column */
 .main-container {
-    max-width: 1400px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-/* Adjust container width, center content, and arrange in a column */
-.main-container .container {
-    width: 90%;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-}
-
-/* Style for the banner section */
-.main-container .container .banner {
-    justify-content: center;
-    display: flex;
-    margin: 20px 0 0 0;
-}
-
-/* Style for images within the banner */
-.main-container .container .banner img {
-    width: auto;
-    max-width: 100%;
-    height: auto; 
-    display: block;
+    max-width: 1300px;
     margin: 0 auto;
-}
-
-/* Style for the category section */
-.main-container .container .category-sec {
-    margin: 10px 0 0 0;  
-}
-
-/* Style for the heading in the category section */
-.main-container .container .category-sec h1 {
-    color: rgba(0, 0, 0, 0.749);
+    padding: 0 40px;
     font-family: 'Poppins', sans-serif;
 }
 
-/* Style for the item section */
-.main-container .container .item-section {
-    min-width: 40%;
+.main-container .container {
+    width: 100%;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 10px 20px 0 0;
+    flex-direction: column;
 }
 
-/* Style for individual item boxes */
+.main-container .container .banner {
+    margin: 28px 0 0 0;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.main-container .container .banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.main-container .container .category-sec {
+    margin: 48px 0 0 0;
+}
+
+.main-container .container .category-sec h1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #111;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+}
+
+.main-container .container .category-sec hr {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin-bottom: 28px;
+}
+
+.main-container .container .item-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 24px;
+}
+
 .main-container .container .item-section .item-box {
-    background-color: white;
-    width: 200px;
-    height: 500px;
+    background: #fff;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px #0000003b;
-    margin: 40px 10px 40px 60px;
+    border-radius: 6px;
+    border: 1px solid #ebebeb;
+    padding-bottom: 20px;
+    transition: box-shadow 0.25s, transform 0.25s;
+    overflow: hidden;
 }
 
-/* Style for images within item boxes */
+.main-container .container .item-section .item-box:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.10);
+    transform: translateY(-4px);
+}
+
 .main-container .container .item-section .item-box img {
-    width: 200px;
-    max-width: 100%;
-    height: auto; 
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
     display: block;
-    margin: 0 auto; 
+    margin-bottom: 14px;
 }
 
-/* Style for anchor tags within item boxes */
-.main-container .container .item-section .item-box a {
-    padding: 10px 20px;
-    margin: 20px 0px;
-    border: none;
-    font-size: 14px;
+.main-container .container .item-section .item-box .heading {
+    font-size: 13px;
+    font-weight: 500;
+    color: #111;
+    text-align: center;
+    padding: 0 12px;
+    margin-bottom: 6px;
+}
+
+.main-container .container .item-section .item-box .description {
+    font-size: 13px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.main-container .container .item-section .item-box a.cart-btn {
+    padding: 9px 22px;
+    font-size: 11px;
     font-family: 'Poppins', sans-serif;
-    background-color: #000000;
-    color: white;
-    font-weight: normal;
+    background: #111;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 500;
+    border-radius: 2px;
+    transition: background 0.2s, color 0.2s;
+    margin-top: auto;
 }
 
-/* Media query for smaller screens */
-@media screen and (max-width:700px) {
-    /* Adjust category section heading font size */
+.main-container .container .item-section .item-box a.cart-btn:hover {
+    background: #fff;
+    color: #111;
+    outline: 1.5px solid #111;
+}
+
+.ad1 {
+    margin-top: 48px;
+}
+
+.ad1 > img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 0;
+    display: block;
+}
+
+@media screen and (max-width: 700px) {
+    .main-container {
+        padding: 0 16px;
+    }
+    .main-container .container .item-section {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+    }
     .main-container .container .category-sec h1 {
-        font-size: 100%;
+        font-size: 16px;
     }
 }
